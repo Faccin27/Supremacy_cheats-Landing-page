@@ -7,6 +7,13 @@ import cheating from "../assets/videos/cheating.mp4";
 
 import { Dialog, DialogPanel } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import {
+  CursorArrowRaysIcon,
+  BoltIcon,
+  EyeIcon,
+  FireIcon,
+  ArrowUturnUpIcon,
+} from "@heroicons/react/20/solid";
 
 const navigation = [
   { name: "Product", href: "#" },
@@ -173,6 +180,40 @@ export default function Example() {
                 </div>
               </div>
             </div>
+          </div>
+          <div className="mx-auto grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5 mt-8">
+            <div className="col-span-2 max-h-12 w-full text-center lg:col-span-1 flex items-center justify-center space-x-2">
+              <CursorArrowRaysIcon className="h-8 w-8 text-white" />
+              <h2 className="text-white text-2xl font-semibold">Aimbot</h2>
+            </div>
+            <div className="col-span-2 max-h-12 w-full text-center lg:col-span-1 flex items-center justify-center space-x-2">
+              <BoltIcon className="h-8 w-8 text-white" />
+              <h2 className="text-white text-2xl font-semibold">Trigger</h2>
+            </div>
+            <div className="col-span-2 max-h-12 w-full text-center lg:col-span-1 flex items-center justify-center space-x-2">
+              <EyeIcon className="h-8 w-8 text-white" />
+              <h2 className="text-white text-2xl font-semibold">ESP</h2>
+            </div>
+            <div className="col-span-2 max-h-12 w-full text-center sm:col-start-2 lg:col-span-1 flex items-center justify-center space-x-2">
+              <ArrowUturnUpIcon className="h-8 w-8 text-white" />
+              <h2 className="text-white text-2xl font-semibold">Bhop</h2>
+            </div>
+            <div className="col-span-2 col-start-2 max-h-12 w-full text-center sm:col-start-auto lg:col-span-1 flex items-center justify-center space-x-2">
+              <FireIcon className="h-8 w-8 text-white" />
+              <h2 className="text-white text-2xl font-semibold">No recoil</h2>
+            </div>
+          </div>
+          <div
+            aria-hidden="true"
+            className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
+          >
+            <div
+              style={{
+                clipPath:
+                  "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
+              }}
+              className="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-20 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
+            />
           </div>
         </div>
       </main>
