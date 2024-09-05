@@ -11,6 +11,7 @@ import {
   CursorArrowRaysIcon,
   BoltIcon,
   EyeIcon,
+  InformationCircleIcon,
   FireIcon,
   ArrowUturnUpIcon,
 } from "@heroicons/react/20/solid";
@@ -20,6 +21,44 @@ const navigation = [
   { name: "Features", href: "#" },
   { name: "Marketplace", href: "#" },
   { name: "Company", href: "#" },
+];
+
+const features = [
+  {
+    name: "Aimbot",
+    description:
+      "Aimbot is a feature that helps to automatically aim at the nearest target.",
+    icon: CursorArrowRaysIcon,
+  },
+  {
+    name: "Triggerbot",
+    description:
+      "Triggerbot automatically shoots when the crosshair is over an enemy.",
+    icon: BoltIcon,
+  },
+  {
+    name: "Wallhack",
+    description:
+      "Wallhack allows you to see enemies through walls and objects.",
+    icon: EyeIcon,
+  },
+  {
+    name: "ESP (Extra Sensory Perception)",
+    description:
+      "ESP displays additional information about enemies, such as health, weapons, and distance.",
+    icon: InformationCircleIcon,
+  },
+  {
+    name: "No Recoil",
+    description: "Removes weapon recoil to make shooting easier.",
+    icon: FireIcon,
+  },
+  {
+    name: "Auto BunnyHop",
+    description:
+      "Script that allows the user to perform bunnyhop movement automatically.",
+    icon: ArrowUturnUpIcon,
+  },
 ];
 
 export default function Example() {
@@ -214,6 +253,39 @@ export default function Example() {
               }}
               className="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-20 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
             />
+          </div>
+        </div>
+
+        {/* Feature section */}
+        <div className="mt-32 sm:mt-56">
+          <div className="mx-auto max-w-7xl px-6 lg:px-8">
+            <div className="mx-auto max-w-2xl sm:text-center">
+              <h2 className="text-base font-semibold leading-7 text-indigo-600">
+                Everything you need
+              </h2>
+              <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                No skills? No problem.
+              </p>
+              <p className="mt-6 text-lg leading-8 text-gray-600">
+                Our product has everything you need to become the best player in
+                the match. Our most loyal users are already in the top 300 in
+                Radiant. See for yourself everything we have to offer.
+              </p>
+            </div>
+          </div>
+          <div className="relative overflow-hidden pt-16">
+            <div className="mx-auto max-w-7xl px-6 lg:px-8">
+              <img
+                alt="App screenshot"
+                src={menu}
+                width={2432}
+                height={1442}
+                className="mb-[-12%] rounded-xl shadow-2xl ring-1 ring-gray-900/10"
+              />
+              <div aria-hidden="true" className="relative">
+                <div className="absolute -inset-x-20 bottom-0 bg-gradient-to-t from-white pt-[7%]" />
+              </div>
+            </div>
           </div>
         </div>
       </main>
