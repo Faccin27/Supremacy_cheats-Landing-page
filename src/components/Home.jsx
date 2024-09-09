@@ -37,6 +37,26 @@ const faqs = [
     answer:
       "Yes, our cheats are developed with cutting-edge technology to ensure they are 100% undetectable by anti-cheat systems. We also provide constant updates to maintain maximum security.",
   },
+  {
+    question: "Is it easy to install and use the cheats?",
+    answer:
+      "Absolutely! Our cheats are designed to be extremely easy to install and use. We provide a step-by-step guide and customer support to ensure you can get started quickly.",
+  },
+  {
+    question: "Can I get banned using your cheats?",
+    answer:
+      "Our cheats are rigorously tested to ensure you won't get detected. While the risk is never zero, our team works continuously to minimize any chances of getting banned.",
+  },
+  {
+    question: "What rank can I achieve in Valorant with your cheats?",
+    answer:
+      "With our cheats, you can reach the highest ranks in Valorant. We've had users who made it to the top 30 Radiant, proving just how effective our cheats are.",
+  },
+  {
+    question: "Is customer support available?",
+    answer:
+      "Yes, we offer dedicated 24/7 customer support to help with any questions or issues you may have. We're here to ensure you have the best experience possible.",
+  },
 ];
 const features = [
   {
