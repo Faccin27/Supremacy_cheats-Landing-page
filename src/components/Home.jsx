@@ -5,11 +5,19 @@ import bk from "../assets/images/image.png";
 import menu from "../assets/images/menu.png";
 import cheating from "../assets/videos/cheating.mp4";
 
-import { Dialog, DialogPanel } from "@headlessui/react";
+import {
+  Dialog,
+  DialogPanel,
+  Disclosure,
+  DisclosureButton,
+  DisclosurePanel,
+} from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import {
   CursorArrowRaysIcon,
   BoltIcon,
+  MinusSmallIcon,
+  PlusSmallIcon,
   EyeIcon,
   InformationCircleIcon,
   FireIcon,
@@ -23,7 +31,13 @@ const navigation = [
   { name: "Marketplace", href: "#" },
   { name: "Company", href: "#" },
 ];
-
+const faqs = [
+  {
+    question: "Are the cheats 100% undetectable?",
+    answer:
+      "Yes, our cheats are developed with cutting-edge technology to ensure they are 100% undetectable by anti-cheat systems. We also provide constant updates to maintain maximum security.",
+  },
+];
 const features = [
   {
     name: "Aimbot",
@@ -457,6 +471,41 @@ export default function Example() {
                 </a>
               </div>
             ))}
+          </div>
+        </div>
+        <div className="mx-auto mt-32 max-w-7xl px-6 sm:mt-56 lg:px-8">
+          <div className="mx-auto max-w-4xl divide-y divide-gray-900/10">
+            <h2 className="text-2xl font-bold leading-10 tracking-tight text-gray-900">
+              Frequently asked questions
+            </h2>
+            <dl className="mt-10 space-y-6 divide-y divide-gray-900/10">
+              {faqs.map((faq) => (
+                <Disclosure key={faq.question} as="div" className="pt-6">
+                  <dt>
+                    <DisclosureButton className="group flex w-full items-start justify-between text-left text-gray-900">
+                      <span className="text-base font-semibold leading-7">
+                        {faq.question}
+                      </span>
+                      <span className="ml-6 flex h-7 items-center">
+                        <PlusSmallIcon
+                          aria-hidden="true"
+                          className="h-6 w-6 group-data-[open]:hidden"
+                        />
+                        <MinusSmallIcon
+                          aria-hidden="true"
+                          className="h-6 w-6 [.group:not([data-open])_&]:hidden"
+                        />
+                      </span>
+                    </DisclosureButton>
+                  </dt>
+                  <DisclosurePanel as="dd" className="mt-2 pr-12">
+                    <p className="text-base leading-7 text-gray-600">
+                      {faq.answer}
+                    </p>
+                  </DisclosurePanel>
+                </Disclosure>
+              ))}
+            </dl>
           </div>
         </div>
       </main>
